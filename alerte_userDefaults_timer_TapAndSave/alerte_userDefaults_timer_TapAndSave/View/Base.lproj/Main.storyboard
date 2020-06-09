@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="alerte_userDefaults_timer_TapAndSave" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7D4-oS-0EJ">
+                                <rect key="frame" x="20" y="44" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="TTs-Ic-qEU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbu-5H-hfQ">
+                                <rect key="frame" x="20" y="802" width="177" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7c2-sa-sEY"/>
+                                </constraints>
+                                <state key="normal" image="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="playPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WMZ-5h-Wnt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHW-b6-Og7">
+                                <rect key="frame" x="217" y="802" width="177" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BOT-uA-XlQ"/>
+                                </constraints>
+                                <state key="normal" title="Changer de durée"/>
+                                <connections>
+                                    <action selector="changePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u3m-BH-0nk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDt-Xz-UnD" customClass="TapButton" customModule="alerte_userDefaults_timer_TapAndSave" customModuleProvider="target">
+                                <rect key="frame" x="40" y="428" width="334" height="334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WDt-Xz-UnD" secondAttribute="height" multiplier="1:1" id="s7o-Io-qzT"/>
+                                </constraints>
+                                <state key="normal" title="Tap me"/>
+                                <connections>
+                                    <action selector="tapPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JzD-2r-y4x"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temps restant :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUS-oR-k79">
+                                <rect key="frame" x="20" y="165" width="374" height="243"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de Taps :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OD2-jz-w2R">
+                                <rect key="frame" x="20" y="85" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="jKR-Eb-s0x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tbu-5H-hfQ" secondAttribute="bottom" constant="20" id="4UJ-7H-7uS"/>
+                            <constraint firstItem="OD2-jz-w2R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Rk-Es-SdZ"/>
+                            <constraint firstItem="tbu-5H-hfQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9fk-Ls-OTF"/>
+                            <constraint firstItem="WDt-Xz-UnD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Arw-rm-TS8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RHW-b6-Og7" secondAttribute="bottom" constant="20" id="DEa-rm-IYV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WDt-Xz-UnD" secondAttribute="trailing" constant="40" id="Gjt-Lj-gql"/>
+                            <constraint firstItem="tbu-5H-hfQ" firstAttribute="top" secondItem="WDt-Xz-UnD" secondAttribute="bottom" constant="40" id="SRL-0E-PyJ"/>
+                            <constraint firstItem="7D4-oS-0EJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W5x-3L-1GW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RHW-b6-Og7" secondAttribute="trailing" constant="20" id="ahf-Pw-JcS"/>
+                            <constraint firstItem="WDt-Xz-UnD" firstAttribute="top" secondItem="oUS-oR-k79" secondAttribute="bottom" constant="20" id="ata-GO-Ucu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OD2-jz-w2R" secondAttribute="trailing" constant="20" id="b1j-Qx-Yfc"/>
+                            <constraint firstItem="tbu-5H-hfQ" firstAttribute="width" secondItem="RHW-b6-Og7" secondAttribute="width" id="fdY-l0-P3u"/>
+                            <constraint firstItem="OD2-jz-w2R" firstAttribute="top" secondItem="7D4-oS-0EJ" secondAttribute="bottom" constant="20" id="iFd-E2-wQP"/>
+                            <constraint firstItem="7D4-oS-0EJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jll-lE-zRU"/>
+                            <constraint firstItem="RHW-b6-Og7" firstAttribute="leading" secondItem="tbu-5H-hfQ" secondAttribute="trailing" constant="20" id="krJ-8p-McC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7D4-oS-0EJ" secondAttribute="trailing" constant="20" id="mAV-9g-xIW"/>
+                            <constraint firstItem="oUS-oR-k79" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mcJ-xV-GZv"/>
+                            <constraint firstItem="oUS-oR-k79" firstAttribute="top" secondItem="OD2-jz-w2R" secondAttribute="bottom" constant="20" id="n2m-we-4ss"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oUS-oR-k79" secondAttribute="trailing" constant="20" id="ucY-Uz-ng3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bestScoreLabel" destination="7D4-oS-0EJ" id="0jp-Ku-caP"/>
+                        <outlet property="changeTimeButton" destination="RHW-b6-Og7" id="dHY-wR-ZrX"/>
+                        <outlet property="numberTapsLabel" destination="OD2-jz-w2R" id="Hjt-n3-UzV"/>
+                        <outlet property="playButton" destination="tbu-5H-hfQ" id="dJd-5E-Dgy"/>
+                        <outlet property="tapButton" destination="WDt-Xz-UnD" id="gIu-2n-Z5f"/>
+                        <outlet property="timeRestLabel" destination="oUS-oR-k79" id="vgu-cc-fbh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="104.46428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+    </resources>
+</document>

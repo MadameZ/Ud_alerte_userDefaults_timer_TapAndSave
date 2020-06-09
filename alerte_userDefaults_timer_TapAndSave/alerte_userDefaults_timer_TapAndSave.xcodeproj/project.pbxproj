@@ -13,6 +13,7 @@
 		BDC0C5D4248E92450034DC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC0C5D2248E92450034DC36 /* Main.storyboard */; };
 		BDC0C5D6248E92490034DC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC0C5D5248E92490034DC36 /* Assets.xcassets */; };
 		BDC0C5D9248E92490034DC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC0C5D7248E92490034DC36 /* LaunchScreen.storyboard */; };
+		BDC0C5E5248F950E0034DC36 /* TapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC0C5E4248F950E0034DC36 /* TapButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BDC0C5D5248E92490034DC36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDC0C5D8248E92490034DC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDC0C5DA248E92490034DC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC0C5E4248F950E0034DC36 /* TapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		BDC0C5CB248E92450034DC36 /* alerte_userDefaults_timer_TapAndSave */ = {
 			isa = PBXGroup;
 			children = (
-				BDC0C5CC248E92450034DC36 /* AppDelegate.swift */,
-				BDC0C5CE248E92450034DC36 /* SceneDelegate.swift */,
-				BDC0C5D0248E92450034DC36 /* ViewController.swift */,
-				BDC0C5D2248E92450034DC36 /* Main.storyboard */,
-				BDC0C5D5248E92490034DC36 /* Assets.xcassets */,
-				BDC0C5D7248E92490034DC36 /* LaunchScreen.storyboard */,
-				BDC0C5DA248E92490034DC36 /* Info.plist */,
+				BDC0C5E3248E95A70034DC36 /* Supporting files */,
+				BDC0C5E2248E95A20034DC36 /* Controller */,
+				BDC0C5E1248E959D0034DC36 /* View */,
+				BDC0C5E0248E95950034DC36 /* Model */,
 			);
 			path = alerte_userDefaults_timer_TapAndSave;
+			sourceTree = "<group>";
+		};
+		BDC0C5E0248E95950034DC36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDC0C5E1248E959D0034DC36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDC0C5D2248E92450034DC36 /* Main.storyboard */,
+				BDC0C5E4248F950E0034DC36 /* TapButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDC0C5E2248E95A20034DC36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDC0C5D0248E92450034DC36 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDC0C5E3248E95A70034DC36 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				BDC0C5CC248E92450034DC36 /* AppDelegate.swift */,
+				BDC0C5CE248E92450034DC36 /* SceneDelegate.swift */,
+				BDC0C5D7248E92490034DC36 /* LaunchScreen.storyboard */,
+				BDC0C5D5248E92490034DC36 /* Assets.xcassets */,
+				BDC0C5DA248E92490034DC36 /* Info.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +176,7 @@
 				BDC0C5D1248E92450034DC36 /* ViewController.swift in Sources */,
 				BDC0C5CD248E92450034DC36 /* AppDelegate.swift in Sources */,
 				BDC0C5CF248E92450034DC36 /* SceneDelegate.swift in Sources */,
+				BDC0C5E5248F950E0034DC36 /* TapButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = alerte_userDefaults_timer_TapAndSave/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/alerte_userDefaults_timer_TapAndSave/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = alerte_userDefaults_timer_TapAndSave/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/alerte_userDefaults_timer_TapAndSave/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
